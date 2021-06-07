@@ -13,3 +13,16 @@ code {
   font-family: shabnam, source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:visited {
+  color: unset;
+}
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+  color: black;
+}

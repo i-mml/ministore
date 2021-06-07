@@ -16,8 +16,9 @@
 }
 
 .header-container {
+  font-size: 18px;
   padding: 15px 10px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(247, 247, 247);
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,7 +29,6 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  color: red;
 }
 
 .header-icon {
@@ -44,4 +44,13 @@
 .header-items:hover {
   border-bottom: 2px solid rgb(145, 7, 7);
   background-color: rgb(241, 241, 241);
+}
+
+.header-logo {
+  text-align: center;
+  align-items: center;
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 20px;
 }

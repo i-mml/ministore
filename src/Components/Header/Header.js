@@ -2,8 +2,9 @@ import "./Header.css";
 
 import { AppstoreOutlined, MailOutlined } from "@ant-design/icons";
 import { Col, Menu, Row } from "antd";
-import { Link, BrowserRouter as Router } from "react-router-dom";
 import React, { useState } from "react";
+
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [state, setState] = useState();
@@ -19,59 +20,68 @@ const Header = () => {
       mode="horizontal"
       className="header-container"
     >
-      <Router>
-        <Row justify="space-around" align="middle">
-          <Col span={8} className="header-cols">
-            <Menu.Item
-              key="home"
-              icon={<MailOutlined />}
-              className="header-items"
-            >
-              <Link to="/">خانه</Link>
-            </Menu.Item>
-            <Menu.Item
-              key="productList"
-              icon={<AppstoreOutlined />}
-              className="header-items"
-            >
-              <Link to="/productList">لیست محصولات</Link>
-            </Menu.Item>
-            <Menu.Item
-              key="orderTracking"
-              icon={<AppstoreOutlined />}
-              className="header-items"
-            >
-              <Link to="/orderTracking">پیگیری سفارشات</Link>
-            </Menu.Item>
-          </Col>
-          <Col span={6} style={{ textAlign: "center" }}>
-            <span className="header-icon">our icon</span>
-          </Col>
-          <Col span={8} className="header-cols">
-            <Menu.Item
-              key="articles"
-              icon={<AppstoreOutlined />}
-              className="header-items"
-            >
-              <Link to="/articles">مقالات</Link>
-            </Menu.Item>
-            <Menu.Item
-              key="aboutUs"
-              icon={<AppstoreOutlined />}
-              className="header-items"
-            >
-              <Link to="/aboutUS">درباره ما</Link>
-            </Menu.Item>
-            <Menu.Item
-              key="conection"
-              icon={<AppstoreOutlined />}
-              className="header-items"
-            >
-              <Link to="/conection">تماس با ما</Link>
-            </Menu.Item>
-          </Col>
-        </Row>
-      </Router>
+      <Row justify="space-around" align="middle">
+        <Col span={8} className="header-cols">
+          <Menu.Item
+            key="home"
+            icon={<MailOutlined />}
+            className="header-items"
+          >
+            <Link to="/">خانه</Link>
+          </Menu.Item>
+          <Menu.Item
+            key="productList"
+            icon={<AppstoreOutlined />}
+            className="header-items"
+          >
+            <Link to="/productList">لیست محصولات</Link>
+          </Menu.Item>
+          <Menu.Item
+            key="orderTracking"
+            icon={<AppstoreOutlined />}
+            className="header-items"
+          >
+            <Link to="/orderTracking">پیگیری سفارشات</Link>
+          </Menu.Item>
+        </Col>
+        <Col span={4} className="header-logo">
+          <span style={{ verticalAlign: "text-top", marginRight: "5px" }}>
+            K A F S H
+          </span>
+          <img
+            src="/images/logo2.png"
+            style={{ width: "100px", height: "60px" }}
+            alt="logo"
+          />
+          <span style={{ verticalAlign: "text-top", marginLeft: "2px" }}>
+            {" "}
+            D O Z A K
+          </span>
+        </Col>
+        <Col span={8} className="header-cols">
+          <Menu.Item
+            key="articles"
+            icon={<AppstoreOutlined />}
+            className="header-items"
+          >
+            <Link to="/articles">مقالات</Link>
+          </Menu.Item>
+          <Menu.Item
+            key="aboutUs"
+            icon={<AppstoreOutlined />}
+            className="header-items"
+          >
+            <Link to="/aboutUs">درباره ما</Link>
+          </Menu.Item>
+          <Menu.Item
+            key="conection"
+            icon={<AppstoreOutlined />}
+            className="header-items"
+          >
+            <Link to="/conection">تماس با ما</Link>
+          </Menu.Item>
+        </Col>
+      </Row>
     </Menu>
   );
 };
