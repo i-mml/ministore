@@ -1,0 +1,82 @@
+.home_container {
+  width: 100%;
+  text-align: right;
+  align-items: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.social_img {
+  width: 55px;
+  height: 55px;
+}
+
+.about_header {
+  margin: 3rem 0;
+  font-size: 20px;
+}
+
+.about_card_box {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_card {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about_card p {
+  margin: 2rem 0;
+}
+
+.about_card:hover {
+  color: rgb(63, 63, 63);
+}
+
+.about_form {
+  padding: 20px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.email {
+  margin-left: 5px;
+  width: 40%;
+  padding: 5px;
+}
+
+.text {
+  margin-left: 17px;
+  margin-top: 2rem;
+  width: 40%;
+  padding: 5px 5px 50px 5px;
+}
+
+.name {
+  margin-left: 5px;
+  width: 40%;
+  padding: 5px;
+  margin-bottom: 2rem;
+}
+
+.submit_btn {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 10px;
+  color: #444;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  border-color: #999 !important;
+}
+
+.submit_btn:hover {
+  border-color: #777;
+}
