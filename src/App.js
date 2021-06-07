@@ -6,16 +6,19 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
-import React from "react";
+import AboutUs from "./pages/aboutUs/AboutUs";
+import React, { useEffect } from "react";
 
 function App() {
+  
   return (
     <>
-      <Header />
+      <Header /> 
       <div className="main-container">
         <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Home} /> 
+            <Route exact path="/aboutUs" component={AboutUs} />
           </Switch>
         </Router>
       </div>
