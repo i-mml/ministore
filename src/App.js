@@ -1,32 +1,26 @@
-import React, { useState } from "react";
-import TaskList from "./tasks.js";
-import "./style.css";
 import "./App.css";
+import "antd/dist/antd.css";
 
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
+import FooterComponent from "./Components/Footer/FooterComponent";
+import Header from "./Components/Header/Header";
+import Home from "./pages/Home/Home";
+import React from "react";
 
 function App() {
-  const [newTaskText, setNewTaskText] = useState("");
-  const [tasks, setTasks] = useState(["do", "just do ", "Hello"]);
-
-  const addTask = () => {
-    if (!newTaskText) return;
-    setTasks((currentTasks) => {
-      return [...currentTasks, newTaskText];
-      setNewTaskText("");
-    });
-  };
-
-  const onChangeInput = (e) => {
-    const value = e.target.value;
-    setNewTaskText(value);
-  };
-
   return (
-    <div className={"container"}>
-      <input value={newTaskText} onChange={onChangeInput} />
-      <button onClick={addTask}>add</button>
-      <TaskList tasks={tasks} />
-    </div>
+    <>
+      <Header />
+      <div className="main-container">
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Router>
+      </div>
+      <FooterComponent />
+    </>
   );
 }
 
