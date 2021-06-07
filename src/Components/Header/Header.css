@@ -1,0 +1,43 @@
+* {
+  font-family: shabnam !important;
+}
+/* #########  global styles ######### */
+.ant-menu-item .ant-menu-item-icon,
+.ant-menu-submenu-title .ant-menu-item-icon,
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+  margin-left: 3px;
+}
+
+.ant-menu-horizontal .ant-menu-item,
+.ant-menu-horizontal .ant-menu-submenu-title {
+  align-items: center;
+  align-content: center;
+}
+
+.header-container {
+  padding: 15px 10px;
+  background-color: rgb(226, 226, 226);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header-cols {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: red;
+}
+
+.header-icon {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px;
+  border: 2px solid #132;
+}
+
+.header-items:hover {
+  border-bottom: 2px solid rgb(145, 7, 7);
+}
