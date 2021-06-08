@@ -7,6 +7,7 @@ import AboutUs from "./pages/aboutUs/AboutUs";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
+import ProductList from "./pages/ProductList/ProductList";
 import React from "react";
 
 function App() {
@@ -19,14 +20,14 @@ function App() {
             <Route exact path="/aboutUs">
               <AboutUs />
             </Route>
+            <Route exact path="/productList">
+              <ProductList />
+            </Route>
             <Route exact path="/">
-              <div className="main-container">
-                <Home />
-              </div>
+              <Home />
             </Route>
           </div>
         </Switch>
-
       </Router>
     </>
   );

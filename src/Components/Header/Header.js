@@ -54,7 +54,6 @@ const Header = () => {
             alt="logo"
           />
           <span style={{ verticalAlign: "text-top", marginLeft: "2px" }}>
-            {" "}
             D O Z A K
           </span>
         </Col>
