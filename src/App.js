@@ -7,27 +7,22 @@ import AboutUs from "./pages/aboutUs/AboutUs";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
-import React, { useEffect } from "react";
+import ProductList from "./pages/ProductList/ProductList";
+import React from "react";
 
 function App() {
-  
   return (
     <>
       <Router>
         <Header />
-        <Switch>
-          <div className="main-container">
-            <Route exact path="/aboutUs">
-              <AboutUs />
-            </Route>
-            <Route exact path="/">
-              <div className="main-container">
-                <Home />
-              </div>
-            </Route>
-          </div>
-        </Switch>
-
+        <div className="main-container">
+          <Switch>
+            <Route exact path="/aboutUs" component={AboutUs} />
+            <Route exact path="/productList" component={ProductList} />
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </div>
+        <FooterComponent />
       </Router>
     </>
   );
