@@ -4,6 +4,7 @@ import "antd/dist/antd.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Articles from "./pages/Articles/Articles";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
@@ -19,6 +20,7 @@ function App() {
           <Switch>
             <Route exact path="/aboutUs" component={AboutUs} />
             <Route exact path="/productList" component={ProductList} />
+            <Route exact path="/articles" component={Articles} />
             <Route exact path="/" component={Home} />
           </Switch>
         </div>
