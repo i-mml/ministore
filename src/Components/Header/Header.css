@@ -16,13 +16,14 @@
 }
 
 .header-container {
-  font-size: 18px;
+  font-size: 17px;
   padding: 15px 10px;
   background-color: rgb(247, 247, 247);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
+  max-height: 98px;
 }
 
 .header-cols {
@@ -38,8 +39,12 @@
   border: 2px solid #132;
 }
 
+.header-items{
+  color: black;
+}
 .header-items:hover {
   border-bottom: 2px solid rgb(145, 7, 7);
+  background-color: rgb(241, 241, 241);
 }
 
 .header-logo {
@@ -48,5 +53,5 @@
   border: 2px solid black;
   box-sizing: border-box;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 15px;
 }

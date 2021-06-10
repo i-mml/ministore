@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-starter-bg"></div>
         <Row className="home-starter-content">
           <Col span={24} style={{ marginBottom: "20px" }}>
-            <h2 style={{ color: "white" }}>به بوتیک کفش دوزک خوش آمدید</h2>
+            <h2 style={{ color: "white" }}>به بوتیک کفشدوزک خوش آمدید</h2>
           </Col>
           <Col span={24}>
             شما میتوانید هر جنس ، مدل ، سایز و رنگ کفشی را در کفش دوزک شوز تهیه

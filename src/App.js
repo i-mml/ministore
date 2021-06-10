@@ -4,9 +4,11 @@ import "antd/dist/antd.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Articles from "./pages/Articles/Articles";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
+import ProductList from "./pages/ProductList/ProductList";
 import React from "react";
 
 function App() {
@@ -14,19 +16,15 @@ function App() {
     <>
       <Router>
         <Header />
-        <Switch>
-          <div className="main-container">
-            <Route exact path="/aboutUs">
-              <AboutUs />
-            </Route>
-            <Route exact path="/">
-              <div className="main-container">
-                <Home />
-              </div>
-            </Route>
-          </div>
-        </Switch>
-
+        <div className="main-container">
+          <Switch>
+            <Route exact path="/aboutUs" component={AboutUs} />
+            <Route exact path="/productList" component={ProductList} />
+            <Route exact path="/articles" component={Articles} />
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </div>
+        <FooterComponent />
       </Router>
     </>
   );
