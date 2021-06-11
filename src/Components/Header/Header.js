@@ -20,7 +20,7 @@ const Header = () => {
       mode="horizontal"
       className="header-container"
     >
-      <Row justify="space-around" align="middle">
+      <Row justify="space-between" align="middle">
         <Col span={8} className="header-cols">
           <Menu.Item
             key="home"
@@ -44,8 +44,8 @@ const Header = () => {
             <Link to="/orderTracking">پیگیری سفارشات</Link>
           </Menu.Item>
         </Col>
-        <Col span={4} className="header-logo">
-          <span style={{ verticalAlign: "text-top", marginRight: "5px" }}>
+        <Col span={5} className="header-logo">
+          {/* <span style={{ verticalAlign: "text-top", marginRight: "5px" }}>
             K A F S H
           </span>
           <img
@@ -55,9 +55,17 @@ const Header = () => {
           />
           <span style={{ verticalAlign: "text-top", marginLeft: "2px" }}>
             D O Z A K
-          </span>
+          </span> */}
+          <img src="/images/header-logo.PNG" alt="header-logo" />
         </Col>
-        <Col span={8} className="header-cols">
+        <Col span={10} className="header-cols">
+          <Menu.Item
+            key="howToOrder"
+            icon={<AppstoreOutlined />}
+            className="header-items"
+          >
+            <Link to="/howToOrder">نحوه سفارش</Link>
+          </Menu.Item>
           <Menu.Item
             key="articles"
             icon={<AppstoreOutlined />}
@@ -73,11 +81,11 @@ const Header = () => {
             <Link to="/aboutUs">درباره ما</Link>
           </Menu.Item>
           <Menu.Item
-            key="conection"
+            key="connection"
             icon={<AppstoreOutlined />}
             className="header-items"
           >
-            <Link to="/conection">تماس با ما</Link>
+            <Link to="/connection">تماس با ما</Link>
           </Menu.Item>
         </Col>
       </Row>

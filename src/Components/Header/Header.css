@@ -50,8 +50,5 @@
 .header-logo {
   text-align: center;
   align-items: center;
-  border: 2px solid black;
-  box-sizing: border-box;
-  font-weight: 800;
-  font-size: 15px;
+
 }
