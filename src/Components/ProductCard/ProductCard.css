@@ -32,6 +32,8 @@
   color: #000;
 }
 .card-body-price-value {
+  text-align: center;
+  font-size: 17px;
   color: rgb(4, 114, 4) !important;
   font-weight: 650 !important;
 }

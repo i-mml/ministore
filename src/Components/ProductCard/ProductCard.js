@@ -45,7 +45,7 @@ const ProductCard = ({ productItem }) => {
         <Col span={15} className="card-body-value">
           <h3>{productItem.color}</h3>
         </Col>
-        <Divider />
+        <Divider style={{ marginTop: "5px !important" }} />
         <Col span={9} className="card-body-price-title">
           <span>قیمت محصول :</span>
         </Col>
