@@ -1,6 +1,8 @@
-import React from "react";
 import "./Connection.css";
-import { Row, Col } from "antd";
+
+import { Col, Row } from "antd";
+
+import React from "react";
 
 const Connection = () => {
   return (
@@ -57,6 +59,40 @@ const Connection = () => {
           <a href="https://youtube.com">youtube</a>
         </Col>
       </Row>
+
+      <Row className="contactUs">
+        <div className="div-inputs">
+        <Col span={24}> 
+        <form className="about_form">
+          <h1 className="mb-5">تماس با ما :</h1>
+          <label >نام:</label>
+          <input
+            placeholder="نام خود را وارد کنید ..."
+            type="name"
+            className="name"
+          />
+          <br />
+          <label >ایمیل خود را وارد کنید :</label>
+          <input
+            placeholder="example@email.com"
+            type="email"
+            className="email"
+          />
+          <br />
+          <label >متن خود را وارد کنید:</label>
+          <input
+            placeholder="درخواست شما ..."
+            type="text"
+            className="text"
+          />
+          <br />
+          <button className="submit_btn" type="submit">
+            ثبت 
+          </button>
+        </form>
+        </Col>
+        </div>
+      </Row> 
     </>
   );
 };

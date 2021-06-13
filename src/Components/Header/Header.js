@@ -85,7 +85,7 @@ const Header = () => {
             icon={<AppstoreOutlined />}
             className="header-items"
           >
-            <Link to="/connection">تماس با ما</Link>
+            <Link to="/connection">ارتباط با ما</Link>
           </Menu.Item>
         </Col>
       </Row>
