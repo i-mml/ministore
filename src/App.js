@@ -9,6 +9,7 @@ import Connection from "./pages/Connection/Connection";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
+import HowToOrder from "./pages/HowToOrder/HowToOrder";
 import OrderTracking from "./pages/orderTracking/OrderTracking";
 import ProductList from "./pages/ProductList/ProductList";
 import React from "react";
@@ -25,6 +26,8 @@ function App() {
             <Route exact path="/articles" component={Articles} />
             <Route exact path="/connection" component={Connection} />
             <Route exact path="/orderTracking" component={OrderTracking} />
+            <Route exact path="/HowToOrder" component={HowToOrder} />
+
             <Route exact path="/" component={Home} />
           </Switch>
         </div>
