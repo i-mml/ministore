@@ -1,6 +1,6 @@
 import "./Home.css";
 
-import { Col, Row } from "antd";
+import { Carousel, Col, Divider, Row } from "antd";
 
 import React from "react";
 
@@ -16,6 +16,18 @@ const Home = () => {
           <Col span={24}>
             شما میتوانید هر جنس ، مدل ، سایز و رنگ کفشی را در کفش دوزک شوز تهیه
             کنین
+          </Col>
+        </Row>
+      </div>
+      <div className="home-body">
+        <Divider>تخفیفات فصلی</Divider>
+        <Row justify="space-around" className="carousel-box">
+          <Col span={19} className="carousel">
+            <Carousel autoplay>
+              <img src="/images/offer1.jpg" className="carousel-img" />
+              <img src="/images/offer2.jpg" className="carousel-img" />
+              <img src="/images/offer4.jpg" className="carousel-img" />
+            </Carousel>
           </Col>
         </Row>
       </div>

@@ -1,0 +1,23 @@
+.footer-container-cus {
+    margin-top: 20px;
+  background: #212336;
+  padding: 25px;
+}
+.footer-head-name {
+  color: #eeeeeee7;
+  margin-right: 100px;
+  border: 3px solid #eeeeeee7;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer-link-list {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.end-span{
+color: gray;
+}
