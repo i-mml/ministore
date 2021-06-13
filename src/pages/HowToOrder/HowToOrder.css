@@ -1,8 +1,35 @@
-.HowToOrder-container{
-    background: red;
-    margin-top: 98px;
+.HowToOrder-container {
+  margin-top: 98px;
+  padding: 30px;
 }
 
-h1{
-    color: crimson;
+h1 {
+  color: crimson;
+  font-weight: 700;
 }
+
+.how-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+.how-texts {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.screenshot-row {
+  height: 100px;
+  width: 100%;
+  max-width: 100%;
+}
+.screenshot-row2 {
+  height: 250px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.screenshot {
+    height: 600px;
+    width: 100%;
+    max-width: 100%;
+  }

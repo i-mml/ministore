@@ -27,7 +27,6 @@ function App() {
             <Route exact path="/connection" component={Connection} />
             <Route exact path="/orderTracking" component={OrderTracking} />
             <Route exact path="/HowToOrder" component={HowToOrder} />
-
             <Route exact path="/" component={Home} />
           </Switch>
         </div>
