@@ -30,6 +30,21 @@ const Home = () => {
             </Carousel>
           </Col>
         </Row>
+        <Divider>برند های مشهور</Divider>
+        <Row justify="space-around">
+          <Col span={10}>
+            <img src="/images/offer7.jpg" className="card-bottom"/>
+          </Col>
+          <Col span={10}>
+            <img src="/images/offer8.jpg" className="card-bottom"/>
+          </Col>
+          <Col span={10}>
+            <img src="/images/offer9.jpg" className="card-bottom"/>
+          </Col>
+          <Col span={10}>
+            <img src="/images/offer10.jpg" className="card-bottom"/>
+          </Col>
+        </Row>
       </div>
     </>
   );

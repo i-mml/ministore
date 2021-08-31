@@ -38,11 +38,18 @@
 }
 .carousel-box{
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 .carousel {
 }
 
 .carousel-img {
   height: 450px;
+  border-radius: 10px;
+}
+
+.card-bottom{
+  height: 400px;
+  width: 100%;
   border-radius: 10px;
 }
