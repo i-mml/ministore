@@ -50,17 +50,6 @@ const Header = () => {
           </Menu.Item>
         </Col>
         <Col span={5} className="header-logo">
-          {/* <span style={{ verticalAlign: "text-top", marginRight: "5px" }}>
-            K A F S H
-          </span>
-          <img
-            src="/images/logo2.png"
-            style={{ width: "100px", height: "60px" }}
-            alt="logo"
-          />
-          <span style={{ verticalAlign: "text-top", marginLeft: "2px" }}>
-            D O Z A K
-          </span> */}
           <img src="/images/header-logo.PNG" alt="header-logo" />
         </Col>
         <Col span={10} className="header-cols">
